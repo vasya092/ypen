@@ -1,0 +1,221 @@
+/*
+Theme Name: Cleartheme
+Theme URI: https://github.com/vasya092/Cleartheme
+Author: shtab
+Author URI: https://redshtab.ru/
+Description: Чистая тема, используемая как основа сайтов
+Version: 1.0.0
+License: GNU General Public License v2 or later
+Text Domain: cleartheme
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: cleartheme, sass
+
+
+*/
+
+
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body {
+	margin: 0;
+}
+
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+.screen-reader-text {
+	display: none;
+}
+
+
+/*--------------------------------------------------------------
+# Основное меню
+--------------------------------------------------------------*/
+
+.menu-1 {
+	background-color: #000000;
+	font-size: 14px;
+	margin-bottom: 50px
+}
+
+.menu-1 {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.menu-1 ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.menu-1 li {
+	float: left;
+	position: relative;
+}
+ 
+.menu-1 .nav-menu > li:first-child {
+	margin-left: -20px
+}
+
+.menu-1 a {
+	display: block;
+	text-decoration: none;
+}
+
+.menu-1 ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	left: -999em;
+	z-index: 99999;
+}
+
+.menu-1 ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.menu-1 ul ul a {
+	width: 200px;
+	text-align: left;
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+	border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.menu-1 ul ul li {
+	background-color: #182b5f;
+}
+
+.menu-1 li:hover,
+.menu-1 li.focus {
+	background-color: #182b5f
+}
+
+.menu-1 ul li:hover > ul,
+.menu-1 ul li.focus > ul {
+	left: auto;
+}
+
+.menu-1 ul ul li:hover > ul,
+.menu-1 ul ul li.focus > ul {
+	left: 100%;
+}
+
+.menu-1 a {
+	padding: 20px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-1 .sub-menu li:hover {
+	background-color: #0c1a40
+}
+
+.menu-1 li.page_item_has_children > a:after,
+.menu-1 li.menu-item-has-children > a:after {
+	content: '\25bc';
+	font-size: 7px;
+	vertical-align: 1px;
+	padding-left: 5px;
+	opacity: .75
+}
+.menu-1 li li.page_item_has_children > a:after,
+.menu-1 li li.menu-item-has-children > a:after {
+	content: '\25b6';
+	font-size: 7px;
+	vertical-align: 1px;
+	padding-left: 5px;
+	opacity: .75
+}
+
+/* Small menu. */
+.menu-toggle {
+	display: none
+}
+
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+
+	#site-menu {
+		display: none;
+	}
+
+	.menu-1 {
+		background: none
+	}
+
+	.menu-1 a {
+		border-top: 1px solid rgba(255, 255, 255, 0.10);
+	}
+
+	.menu-toggle {
+		color: white;
+		margin: 0 auto;
+		width: 100%;
+    border: 0;
+    border-radius: 0;
+	}
+
+	.toggled .menu-toggle {
+		color: white;
+		margin: 0 auto
+	}
+
+	.menu-toggle,
+	.menu-1.toggled #site-menu {
+		display: block;
+	}
+
+	.menu-1 li {
+		float: none;
+	  width: 100%;
+	}
+
+	.menu-1 ul ul {
+		position: relative;
+		float: none;
+		left: auto;
+		display: none
+	}
+
+	.menu-1 ul li:hover > ul,
+	.menu-1 ul li.focus > ul {
+		display: block;
+	}
+
+	.menu-1 ul ul a {
+		width: 100%;
+	}
+
+	.menu-1 ul ul ul {
+		left: auto
+	}
+
+	.menu-1 ul ul li:hover > ul,
+	.menu-1 ul ul li.focus > ul {
+		left: auto;
+	}
+
+}
+
+@media screen and (max-width: 1040px) {
+
+	.menu-1 .nav-menu > li:first-child {
+	  margin-left: 0;
+	}
+}
