@@ -28,7 +28,32 @@
 <div class="site-wrapper">
 
 	<header class="header">
-		<!-- Тут header -->
+	<div class="header__wrapper">
+		<div class="hamburger" id="headerBurger">
+		</div>
+		<div class="mobile-menu">
+			<?php wp_nav_menu( [
+				'container_class' => 'mobile-menu__wrapper',
+				'theme_location'  => 'menu-mobile'
+			] ); ?>
+		</div>
+		<div class="header__products">
+			<div class="header__nav">
+				<a href="#" class="header__link">Ручка-тренажёр</a>
+				<a href="#" class="header__link">Детская одежда</a>
+			</div>
+		</div>
+		<div class="header__logo"><img src="/wp-content/uploads/2021/08/logo.svg" alt="Логотип сайта" class="header__logo-img"></div>
+		<div class="header__about">
+			<div class="header__nav">
+				<a href="#" class="header__link">О нас</a>
+				<a href="#" class="header__link">Инструкция YPEN</a>
+			</div>
+		</div>
+		<div class="header__cart">
+			<img src="/wp-content/uploads/2021/08/cart.svg" alt="" class="header__cart-img">
+		</div>
+	</div>
 	</header><!-- .site-header -->
 
 	<div class="site-content">

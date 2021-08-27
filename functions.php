@@ -30,6 +30,7 @@ if ( ! function_exists( 'theme_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary Menu', 'cleartheme' ),
+				'menu-mobile' => esc_html__( 'Мобильное меню', 'cleartheme' ),
 			)
 		);
 
@@ -84,7 +85,12 @@ if ( ! function_exists( 'theme_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'theme_setup' );
 
-
+add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
+function my_scripts_method() {
+	wp_deregister_script( 'jquery' );
+	wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
+	wp_enqueue_script( 'jquery' );
+}
 /**
  * Подключение стилей и скриптов
  */
@@ -92,6 +98,7 @@ function theme_scripts() {
 	wp_enqueue_style( 'theme-style', get_stylesheet_uri(), array(), TEMPLATE_VERSION );
 
 	wp_enqueue_script( 'theme-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), TEMPLATE_VERSION, true );
+	wp_enqueue_script( 'childjs', get_template_directory_uri() . '/assets/js/child.js', array(), TEMPLATE_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

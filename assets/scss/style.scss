@@ -1,3 +1,305 @@
-* {
-    box-sizing: border-box;
+@import 'container/container';
+@import 'mobile-menu/mobile-menu';
+
+@font-face {
+    font-family: 'Circe';
+    src: local('Circe'),
+         url('/wp-content/themes/cleartheme/assets/fonts/Circe.woff2') format('woff2'), 
+         url('/wp-content/themes/cleartheme/assets/fonts/Circe.woff') format('woff'),
+         url('/wp-content/themes/cleartheme/assets/fonts/Circe.ttf') format('ttf'),
+         url('/wp-content/themes/cleartheme/assets/fonts/Circe.eot') format('eot');
+}
+@font-face {
+font-family: 'Circe-Bold';
+src: local('Circe-Bold'),
+        url('/wp-content/themes/cleartheme/assets/fonts/Circe-Bold.woff2') format('woff2'), 
+        url('/wp-content/themes/cleartheme/assets/fonts/Circe-Bold.woff') format('woff'),
+        url('/wp-content/themes/cleartheme/assets/fonts/Circe-Bold.ttf') format('ttf'),
+        url('/wp-content/themes/cleartheme/assets/fonts/Circe-Bold.eot') format('eot');
+}
+@font-face {
+    font-family: 'Neue Machina';
+    src: local('Neue Machina Light'),
+            url('/wp-content/themes/cleartheme/assets/fonts/NeueMachina-Light.woff2') format('woff2'), 
+            url('/wp-content/themes/cleartheme/assets/fonts/NeueMachina-Light.woff') format('woff'),
+            url('/wp-content/themes/cleartheme/assets/fonts/NeueMachina-Light.ttf') format('ttf'),
+            url('/wp-content/themes/cleartheme/assets/fonts/NeueMachina-Light.eot') format('eot');
+    font-weight: 300;
+    font-style: normal;
+}
+
+*, p, a, li{
+    font-family: 'Circe';
+}
+
+%normal-text{
+    font-size: 1.25em;
+    line-height: 1.4em;
+    letter-spacing: 26px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+%block-title{
+    font-family: 'Neue Machina';
+    font-size: 1.375em;
+    line-height: 22px;
+    color: #2D2D2D;
+    font-weight: 300;
+}
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    a{
+        font-family: 'Circe';
+        font-weight: 400;
+        font-size: 15px;
+        text-decoration: none;
+        line-height: 22px;
+        color: #1C1C1C;
+    }
+    &__nav{
+        a{
+            &:not(:last-child){
+                margin-right: 60px;
+            }
+        }
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__products{
+        width: 30%;
+    }
+    &__about{
+        width: 25%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__cart{
+        width: 5%;
+        text-align: right;
+    }
+    &__logo{
+        width: 40%; 
+        text-align: center;
+    }
+}
+
+.main-block{
+    background: url(/wp-content/uploads/2021/08/main-background.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    min-height: 766px;
+    &__title{
+        font-family: 'Neue Machina';
+        max-width: 1030px;
+        text-transform: uppercase;
+        font-size: 6em;
+        line-height: 1.2em;
+        color: #fff;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    &__desc{
+        max-width: 406px;
+        color: #fff;
+    }
+}
+
+.ypen-school{
+    margin: 128px 0px 160px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    &__info{
+        position: relative;
+        padding: 145px 110px 145px 120px;
+        background: #1E90FF;
+    }
+    &__block-title{
+        margin-bottom: 29px;
+    }
+    &__cloud-1{
+        position: absolute;
+        width: 7.69em;
+        top: 90px;
+        right: 0px;
+    }
+    &__cloud-2{
+        position: absolute;
+        width: 4.56em;
+        right: 84px;
+        bottom: 40%;    
+    }
+    &__image{
+        background-image: url('/wp-content/uploads/2021/08/child.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    &__title{
+        font-family: 'Neue Machina';
+        font-size: 4em;
+        line-height: 1em;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    &__desc{
+        margin-bottom: 95px;
+        max-width: 446px;
+        color: #fff;
+    }
+}
+
+.button{
+    font-size: 1.125em;
+    line-height: 1.4em;
+    font-family: 'Circe';
+    color: #161616;
+    background-color: #fff;
+    padding: 14px 42px;
+    border-radius: 4px;
+    width: fit-content;
+}
+.normal-text{
+    @extend %normal-text;
+}
+
+
+.block-title{
+    @extend %block-title;
+}
+@media (max-width: 1720px){
+    body{
+        font-size: 13px;
+    }
+    .main-block{
+        &__title{max-width: 750px;}
+    }
+}
+@media (max-width: 1500px){
+    
+    body{
+        font-size: 11px;
+    }
+    .main-block{
+        &__title{
+            max-width: 783px;
+            // font-size: 62px;
+            // line-height: 67px;
+        }
+        min-height: 640px;
+        max-height: 640px;
+    }
+    
+    .ypen-school{
+        &__info{
+            padding: 60px;
+        }
+    }
+}
+@media (max-width: 1199.98px){
+    body{
+        font-size: 10px;
+    }
+    .main-block{
+        &__title{
+            max-width: 580px;
+            // font-size: 40px;
+            // line-height: 50px;
+        }
+        min-height: 518px;
+        max-height: 518px;
+    }
+    .ypen-school{
+        &__info{
+            padding: 50px;
+        }
+    }
+}
+
+@media (max-width: 991.98px){
+    .header__nav a:not(:last-child) {
+        margin-right: 13px;
+    }
+    body{
+        font-size: 9px;
+    }
+    .main-block{
+        background-position: left;
+        &__title{
+            // font-size: 30px;
+            // line-height: 35px;
+            max-width: 510px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+        &__products{
+            display: none;
+        }
+    }
+    .header__about{
+        display: none;
+    }
+    body{
+        font-size: 11px;
+    }
+    .main-block{
+        display: none;
+    }
+    .button{
+        font-size: 14px;
+    }
+    .ypen-school{
+        margin-top: 0px;
+        &__block-title{
+            display: none;
+        }
+        padding-right: 0px;
+        padding-left: 0px;
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+        &__title{
+            font-size: 22px;
+        }
+        &__cloud-1,&__cloud-2{
+            display: none;
+        }
+        &__info{
+            padding: 25px 15px;
+        }
+        &__desc{
+            margin-bottom: 20px;
+        }
+        &__image{
+            width: 100%;
+            height: 194px;
+            background-image: url(/wp-content/uploads/2021/08/mobile-phone.jpg);
+        }
+
+    }
+}
+@media (min-width: 1720px)
+{
+    body{
+        font-size: 16px;
+    }
+    .main-block{
+        min-height:900px;
+        // &__title{
+        //     font-size: 96px;
+        //     line-height: 102px;
+        // }
+    }
 }
