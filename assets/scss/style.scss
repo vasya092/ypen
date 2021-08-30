@@ -112,9 +112,36 @@ src: local('Circe-Bold'),
         color: #fff;
     }
 }
-
+.slider-block{
+    &__block-title{
+        margin-bottom: 27px;
+    }
+    margin-bottom: 130px;
+}
+.slider-item{
+    &__image{
+        height: 591px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    &__main-info{
+        display: flex;
+        padding-top: 15px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    a{
+        font-size: 13px;
+        color: #1C1C1C;
+        text-decoration: none;
+    }
+}
 .ypen-school{
-    margin: 128px 0px 160px;
+    margin: 128px 0px 130px;
     &__wrapper{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -158,7 +185,63 @@ src: local('Circe-Bold'),
     }
 }
 
+.instagram{
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 30px;
+        a{
+            font-family: 'Neue Machina';
+            font-size: 32px;
+            line-height: 30px;
+            color: #1C1C1C;
+            text-decoration: none;
+        }
+    }
+    &__photos{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.main-bottom{
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    &__item{
+        padding: 120px 100px;
+        color: #FFFFFF;
+    }
+    &__desc{
+        padding-top: 26px;
+        padding-bottom: 50px;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .main-bottom__item{
+        &:nth-child(1){
+            background-color: #40A756;
+        }
+        &:nth-child(2){
+            background-color: #FCDF5A;
+            color: #1C1C1C;
+        }
+        &:nth-child(3){
+            background-color: #1E90FF;
+        }
+    }
+    &__title{
+        font-family: 'Neue Machina';
+        font-size: 3em;
+        line-height: 1em;
+        max-width: 400px;
+    }
+}
 .button{
+    display: block;
     font-size: 1.125em;
     line-height: 1.4em;
     font-family: 'Circe';
@@ -167,16 +250,24 @@ src: local('Circe-Bold'),
     padding: 14px 42px;
     border-radius: 4px;
     width: fit-content;
+    text-decoration: none;
 }
 .normal-text{
     @extend %normal-text;
 }
 
-
+.woocommerce-Price-currencySymbol{
+    margin-left: 5px;
+}
 .block-title{
     @extend %block-title;
 }
 @media (max-width: 1720px){
+    .slider-item{
+        &__image{
+            height: 454px;
+        }
+    }
     body{
         font-size: 13px;
     }
@@ -185,7 +276,14 @@ src: local('Circe-Bold'),
     }
 }
 @media (max-width: 1500px){
-    
+    .main-bottom{
+        &__item {
+            padding: 100px 50px;
+        }
+        &__title{
+            max-width: 280px;
+        }
+    }
     body{
         font-size: 11px;
     }
@@ -200,12 +298,19 @@ src: local('Circe-Bold'),
     }
     
     .ypen-school{
+        
+        margin-bottom: 100px;
         &__info{
             padding: 60px;
         }
     }
 }
 @media (max-width: 1199.98px){
+    .slider-item{
+        &__image{
+            height: 338px;
+        }
+    }
     body{
         font-size: 10px;
     }
@@ -219,6 +324,7 @@ src: local('Circe-Bold'),
         max-height: 518px;
     }
     .ypen-school{
+        margin-bottom: 80px;
         &__info{
             padding: 50px;
         }
@@ -243,6 +349,34 @@ src: local('Circe-Bold'),
 }
 
 @media (max-width: 768px){
+    .main-bottom{
+        grid-template-columns: 1fr;
+        &__item{
+            padding: 40px 16px;
+        }
+        &__title{
+            width: auto;
+        }
+    }
+    .instagram{
+        &__photos{
+            grid-template-columns: 50% 50%;
+        }
+        &__title{
+            a{
+                font-size: 16px;
+                line-height: 16px;
+            }
+        }
+    }
+    .slider-block{
+        margin-bottom: 45px;
+    }
+    .slider-item{
+        &__image{
+            height: 223px;
+        }
+    }
     .header{
         &__products{
             display: none;
@@ -262,6 +396,7 @@ src: local('Circe-Bold'),
     }
     .ypen-school{
         margin-top: 0px;
+        margin-bottom: 45px;
         &__block-title{
             display: none;
         }

@@ -28,10 +28,49 @@ get_header();
                 <img src="/wp-content/uploads/2021/08/cloud2.svg" alt="" class="ypen-school__cloud-2">
                 <div class="ypen-school__title">Ручка-тренажер для учеников начальных классов</div>
                 <div class="ypen-school__desc normal-text">Помогаем детям правильно держать ручку, писать с комфортом и без болей</div>
-                <div class="button button_white">О ручке YPEN</div>
+                <a href="#" class="button button_white">О ручке YPEN</a>
             </div>    
         </div>
     </section>
+    <section class="slider-block">
+        <div class="block-title slider-block__block-title">Худи на каждый день</div>
+        <?do_shortcode( '[show-category-slider category="hudi"]');?>
+    </section>
+    
+    <section class="slider-block">
+        <div class="block-title slider-block__block-title">Футболки на каждый день</div>
+        <?do_shortcode( '[show-category-slider category="hudi"]');?>
+    </section>
+
+    <div class="instagram">
+        <section class="instagram__title">
+            <div class="block-title">Следите за нами в Instagram</div>
+            <a href="https://www.instagram.com/ypen.ru/" target="_blank" class="instagram__link">@ypen.ru</a>
+        </section>
+        <div class="instagram__photos">
+            <img src="/wp-content/uploads/2021/08/inst1.jpg" alt="" class="instagram__img">
+            <img src="/wp-content/uploads/2021/08/inst2.jpg" alt="" class="instagram__img">
+            <img src="/wp-content/uploads/2021/08/inst3.jpg" alt="" class="instagram__img">
+            <img src="/wp-content/uploads/2021/08/inst4.jpg" alt="" class="instagram__img">
+        </div>
+    </div>
+    <div class="main-bottom">
+        <div class="main-bottom__item">
+            <div class="main-bottom__title">История ручки-птички</div>
+            <div class="main-bottom__desc">Всё началось с одной ручки и превратилось в нашу миссию.</div>
+            <a href="#" class="main-bottom__button button">Читать подробнее</a>
+        </div>
+        <div class="main-bottom__item">
+            <div class="main-bottom__title">Отзывы о нашей продукции</div>
+            <div class="main-bottom__desc">Впечатления и первый опыт от наших покупателей</div>
+            <a href="#" class="main-bottom__button button">Читать подробнее</a>
+        </div>
+        <div class="main-bottom__item">
+            <div class="main-bottom__title">Инструкция YPEN</div>
+            <div class="main-bottom__desc">У вас в руках YPEN — ручка-тренажер, что дальше?</div>
+            <a href="#" class="main-bottom__button button">Читать подробнее</a>
+        </div>
+    </div>
 </div>
 <?php
 get_footer();

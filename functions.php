@@ -99,6 +99,8 @@ function theme_scripts() {
 
 	wp_enqueue_script( 'theme-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), TEMPLATE_VERSION, true );
 	wp_enqueue_script( 'childjs', get_template_directory_uri() . '/assets/js/child.js', array(), TEMPLATE_VERSION, true );
+	wp_enqueue_script( 'swiperjs', 'https://unpkg.com/swiper@7/swiper-bundle.min.js', array(), TEMPLATE_VERSION, true );
+	wp_enqueue_script( 'slidersjs', get_template_directory_uri() . '/assets/js/sliders.js', array(), TEMPLATE_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -106,10 +108,10 @@ function theme_scripts() {
 
 	if ( class_exists( 'WooCommerce' ) ) {
 		wp_enqueue_style( 'theme-woocommerce', get_template_directory_uri() . '/assets/css/woocommerce.css', 'theme-style', TEMPLATE_VERSION );
+		wp_enqueue_style( 'swipercss','https://unpkg.com/swiper@7/swiper-bundle.min.css', 'theme-style', TEMPLATE_VERSION );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
-
 /**
  * Кастомный хедер.
  */
@@ -125,6 +127,11 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
+
+/**
+ * Функции действующие отдельно от шаблонов
+ */
+require get_template_directory() . '/inc/product-slider.php';
 
 /**
  * Настройка кастомайзера.
