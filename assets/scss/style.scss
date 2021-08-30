@@ -87,7 +87,81 @@ src: local('Circe-Bold'),
         text-align: center;
     }
 }
-
+.footer{
+    padding-top: 120px;
+    padding-bottom: 70px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 5% 23% 16% 16% 16% 24%;
+        grid-row-gap: 60px;
+    }
+    a, div{
+        font-family: 'Circe';
+        font-size: 14px;
+        line-height: 20px;
+        color: #1C1C1C;
+        text-decoration: none;
+    }
+    &__license{
+        padding-right: 100px;
+        padding-left: 15px;
+        p{
+            font-family: 'Circe';
+            font-size: 11px;
+            line-height: 16px;
+        }
+    }
+    &__menu{
+        display: flex;
+        ul{
+            padding-left: 0px;
+            list-style: none;
+            li{
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &.mobile-footer-menu{
+            display: none;
+        }
+    }
+    &__social{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__icons{
+        a:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    &__phone-block{
+        margin-top: 17px;
+        margin-bottom: 50px;
+        a{
+            font-size: 20px;
+            line-height: 29px;
+            font-weight: 700;
+            font-family: 'Circe-Bold';
+        }
+    }
+    &__copyright, &__developed{
+        grid-column: span 2;
+    }
+    &__developed{
+        text-align: right;
+    }
+    .footer__bottom-item{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__logo{
+        img{
+            width: 100%;
+            max-width: 53px;
+        }
+    }
+}
 .main-block{
     background: url(/wp-content/uploads/2021/08/main-background.jpg);
     background-size: cover;
@@ -212,7 +286,7 @@ src: local('Circe-Bold'),
     display: grid;
     grid-template-columns: 33.333% 33.333% 33.333%;
     &__item{
-        padding: 120px 100px;
+        padding: 120px 93px;
         color: #FFFFFF;
     }
     &__desc{
@@ -263,6 +337,13 @@ src: local('Circe-Bold'),
     @extend %block-title;
 }
 @media (max-width: 1720px){
+    .footer{
+        padding-top: 90px;
+        padding-bottom: 60px;
+        &__license{
+            padding-right: 60px;
+        }
+    }
     .slider-item{
         &__image{
             height: 454px;
@@ -306,6 +387,14 @@ src: local('Circe-Bold'),
     }
 }
 @media (max-width: 1199.98px){
+    .footer{
+        &__license{
+            grid-column: span 2;
+        }
+        &__logo{
+            display: none;
+        }
+    }
     .slider-item{
         &__image{
             height: 338px;
@@ -347,8 +436,105 @@ src: local('Circe-Bold'),
         }
     }
 }
-
+.footer-mobile{
+    ul{ 
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        li{
+            width: 50%;
+        }
+    }
+}
 @media (max-width: 768px){
+    .footer{
+        padding: 0px;
+        padding-top: 40px;
+        padding-bottom: 15px;
+        &__wrapper{
+            grid-row-gap: 30px;
+        }
+        &__logo{
+            width: 25px;
+            display: block;
+            order: 1;
+            padding-left: 10px;
+        }
+        &__license{
+            grid-column: span 5;
+            padding: 0px;
+            padding-left: 40px;
+            padding-right: 10px;
+            p{
+                margin-top: 0px;
+            }
+            order: 2;
+        }
+        &__social{
+            padding: 0px 10px;
+            order: 3;
+            grid-column: span 6;
+            justify-content: flex-start;
+            &-wrapper{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;         
+                align-items: center;
+                justify-content: space-between;
+            }
+            &-title{
+                width: 100%;
+                margin-bottom: 7px;
+            }
+        }
+        &__phone-block{
+            margin: 0px;
+        }
+        &__menu{
+            &:not(.mobile-footer-menu){
+                display: none;
+            }
+            &.mobile-footer-menu{
+                display: block;
+                order: 3;
+                grid-column: span 6;
+                padding: 0px 10px 45px;
+                border-bottom: 1px solid #DCDCDC;
+                margin-bottom: -10px;
+            }
+        }
+        
+        &__policy,&__cookie, &__developed{
+            order: 4;
+            grid-column: span 2;
+            a{
+                color: #A0A0A0;
+                font-size: 10px !important;
+                line-height: 18px !important;
+            }
+        }
+        &__policy{
+            padding-left: 10px;
+            grid-column: span 3;
+        }
+        &__developed{
+            grid-column: span 1;
+            padding-right: 10px;
+            text-align: left;
+        }
+        &__cookie{
+            grid-column: span 2;
+        }
+        &__copyright{
+            grid-column: span 6;
+            padding-left: 10px;
+            color: #A0A0A0 !important;
+            font-size: 10px !important;
+            order: 5;
+            line-height: 18px !important;
+            margin-top: -20px;
+        }
+    }
     .main-bottom{
         grid-template-columns: 1fr;
         &__item{

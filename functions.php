@@ -31,6 +31,10 @@ if ( ! function_exists( 'theme_setup' ) ) :
 			array(
 				'menu-1' => esc_html__( 'Primary Menu', 'cleartheme' ),
 				'menu-mobile' => esc_html__( 'Мобильное меню', 'cleartheme' ),
+				'footer-1' => esc_html__( 'Меню футер 1', 'cleartheme' ),
+				'footer-2' => esc_html__( 'Меню футер 2', 'cleartheme' ),
+				'footer-3' => esc_html__( 'Меню футер 3', 'cleartheme' ),
+				'footer-mobile' => esc_html__( 'Мобильный футер', 'cleartheme' ),
 			)
 		);
 
