@@ -42,7 +42,7 @@ src: local('Circe-Bold'),
 
 %block-title{
     font-family: 'Neue Machina';
-    font-size: 1.375em;
+    font-size: 16px;
     line-height: 22px;
     color: #2D2D2D;
     font-weight: 300;
@@ -163,15 +163,25 @@ src: local('Circe-Bold'),
     }
 }
 .main-block{
-    background: url(/wp-content/uploads/2021/08/main-background.jpg);
+    background: url(/wp-content/uploads/2021/08/noise-back.svg);
+    overflow: hidden;
     background-size: cover;
     background-position: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 60vh;
-    min-height: 766px;
+    min-height: 670px;
+    position: relative;
+    &__absolute{
+        position: absolute;
+        width: 100%;
+        right: 0px;
+        bottom: -100px;
+    }
     &__title{
+        position: relative;
+        margin-top: -90px;
         font-family: 'Neue Machina';
         max-width: 1030px;
         text-transform: uppercase;
@@ -182,6 +192,7 @@ src: local('Circe-Bold'),
         margin-bottom: 30px;
     }
     &__desc{
+        position: relative;
         max-width: 406px;
         color: #fff;
     }
@@ -357,6 +368,10 @@ src: local('Circe-Bold'),
     }
 }
 @media (max-width: 1500px){
+    %normal-text{
+        font-size: 14px;
+        line-height: 19px;
+    }
     .main-bottom{
         &__item {
             padding: 100px 50px;
@@ -406,8 +421,11 @@ src: local('Circe-Bold'),
     .main-block{
         &__title{
             max-width: 580px;
-            // font-size: 40px;
-            // line-height: 50px;
+            font-size: 5em;
+        }
+        &__absolute{
+            height: 100%;
+            object-fit: cover;
         }
         min-height: 518px;
         max-height: 518px;
@@ -419,7 +437,22 @@ src: local('Circe-Bold'),
         }
     }
 }
-
+@media (max-width: 1024px) {
+    img.swiper-button-prev{
+        transform: rotate(180deg) translate(0px, 30px);
+    }
+    img.swiper-button-next{
+        transform: translate(0px, -30px);
+    }
+    .swiper-arrow{
+        display: block !important;
+    }
+    .swiper-arrow{
+        display: block;
+        width: 8px;
+        z-index: 4;
+    }
+}
 @media (max-width: 991.98px){
     .header__nav a:not(:last-child) {
         margin-right: 13px;
@@ -446,7 +479,22 @@ src: local('Circe-Bold'),
         }
     }
 }
+.swiper-arrow{
+    display: none;
+}
 @media (max-width: 768px){
+    img.swiper-button-prev{
+        transform: rotate(180deg) translate(20px, 30px);
+    }
+    img.swiper-button-next{
+        transform: translate(20px, -30px);
+    }
+    .button{
+        padding: 7px 25px;
+    }
+    .no-scroll{
+        overflow: hidden;
+    }
     .footer{
         padding: 0px;
         padding-top: 40px;
@@ -535,6 +583,14 @@ src: local('Circe-Bold'),
             margin-top: -20px;
         }
     }
+
+    .slider-block{
+        overflow: hidden;
+    }
+    .swiper.product-slider{
+        overflow: visible;
+    }
+
     .main-bottom{
         grid-template-columns: 1fr;
         &__item{
@@ -542,11 +598,25 @@ src: local('Circe-Bold'),
         }
         &__title{
             width: auto;
+            font-size: 26px;
+            line-height: 26px;
+            max-width: 300px;
+        }
+        &__desc{
+            font-size: 14px;
+            line-height: 18px;
+            padding-bottom: 25px;
         }
     }
     .instagram{
         &__photos{
             grid-template-columns: 50% 50%;
+            align-items: center;
+            img{
+                display: flex;
+                height: 100%;
+                align-items: center;
+            }
         }
         &__title{
             a{
@@ -557,13 +627,21 @@ src: local('Circe-Bold'),
     }
     .slider-block{
         margin-bottom: 45px;
+        &__block-title{
+            margin-bottom: 15px;
+        }
     }
     .slider-item{
         &__image{
             height: 223px;
         }
+        &__title{
+            width: 100%;
+        }
     }
     .header{
+        padding-top: 18px;
+        padding-bottom: 18px;
         &__products{
             display: none;
         }
@@ -593,6 +671,7 @@ src: local('Circe-Bold'),
         }
         &__title{
             font-size: 22px;
+            margin-bottom: 11px;
         }
         &__cloud-1,&__cloud-2{
             display: none;
@@ -613,14 +692,20 @@ src: local('Circe-Bold'),
 }
 @media (min-width: 1720px)
 {
+    %block-title{
+        font-size: 22px;
+    }
     body{
         font-size: 16px;
     }
     .main-block{
-        min-height:900px;
-        // &__title{
-        //     font-size: 96px;
-        //     line-height: 102px;
-        // }
+        min-height:840px;
+        max-height: 840px;
+            &__absolute{
+                max-height: 1020px;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
     }
 }

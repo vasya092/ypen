@@ -153,3 +153,6 @@ require get_template_directory() . '/inc/customizer/customizer-helper-settings.p
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/woocommerce/functions.php';
 }
+
+add_filter( 'big_image_size_threshold', '__return_false' );
+

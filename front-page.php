@@ -16,6 +16,7 @@ get_header();
 ?> 
 <div class="frontpage">
     <section class="main-block">
+            <img src="/wp-content/uploads/2021/08/2.2-1-1.png" class="main-block__absolute" alt="">
                 <div class="main-block__title">Создаем для обучения и игры</div>
                 <div class="main-block__desc normal-text">Помогаем детям правильно держать ручку, писать с комфортом и без болей</div>
     </section>
@@ -28,7 +29,7 @@ get_header();
                 <img src="/wp-content/uploads/2021/08/cloud2.svg" alt="" class="ypen-school__cloud-2">
                 <div class="ypen-school__title">Ручка-тренажер для учеников начальных классов</div>
                 <div class="ypen-school__desc normal-text">Помогаем детям правильно держать ручку, писать с комфортом и без болей</div>
-                <a href="#" class="button button_white">О ручке YPEN</a>
+                <a href="#" class="button button_white">Купить</a>
             </div>    
         </div>
     </section>
@@ -48,10 +49,10 @@ get_header();
             <a href="https://www.instagram.com/ypen.ru/" target="_blank" class="instagram__link">@ypen.ru</a>
         </section>
         <div class="instagram__photos">
-            <img src="/wp-content/uploads/2021/08/inst1.jpg" alt="" class="instagram__img">
-            <img src="/wp-content/uploads/2021/08/inst2.jpg" alt="" class="instagram__img">
-            <img src="/wp-content/uploads/2021/08/inst3.jpg" alt="" class="instagram__img">
-            <img src="/wp-content/uploads/2021/08/inst4.jpg" alt="" class="instagram__img">
+            <a href="https://instagram.com/ypen.ru?utm_medium=copy_link" target="_blank"><img src="/wp-content/uploads/2021/08/inst1.jpg" alt="" class="instagram__img"></a>
+            <a href="https://instagram.com/ypen.ru?utm_medium=copy_link" target="_blank"><img src="/wp-content/uploads/2021/08/inst2.jpg" alt="" class="instagram__img"></a>
+            <a href="https://instagram.com/ypen.ru?utm_medium=copy_link" target="_blank"><img src="/wp-content/uploads/2021/08/inst3.jpg" alt="" class="instagram__img"></a>
+            <a href="https://instagram.com/ypen.ru?utm_medium=copy_link" target="_blank"><img src="/wp-content/uploads/2021/08/inst4.jpg" alt="" class="instagram__img"></a>
         </div>
     </div>
     <div class="main-bottom">

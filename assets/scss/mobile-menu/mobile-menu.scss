@@ -21,7 +21,7 @@
 .mobile-menu {
     transform: translateX(-100%);
     transition: .2s;
-    z-index: 1;
+    z-index: 3;
     position: fixed;
     width: 100vw;
     background: #fff;
@@ -50,5 +50,6 @@
 @media (max-width: 768px){
     .hamburger{
         display: block;
+        z-index: 4;
     }
 }

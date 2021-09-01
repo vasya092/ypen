@@ -13,6 +13,8 @@ function showCategorySlider($atts) {
     $products = wc_get_products( $query_args );
     ?>
     <div class="swiper product-slider">
+        <img src="/wp-content/uploads/2021/08/arrow.svg" alt="" class="swiper-button-next swiper-arrow">
+        <img src="/wp-content/uploads/2021/08/arrow.svg" alt="" class="swiper-button-prev swiper-arrow">
         <div class="swiper-wrapper">
             <?
                 foreach ($products as $value) {
