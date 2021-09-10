@@ -22,6 +22,7 @@ function showCategorySlider($atts) {
                     <div class="swiper-slide product-slider__item slider-item">
                         <a href="<?echo get_the_permalink( $value->id );?>">
                             <div class="slider-item__image">
+                                <? echo show_sale_badge($value); ?>
                                 <? echo get_the_post_thumbnail( $value->id, 'large'); ?>
                             </div>
                             <div class="slider-item__main-info">

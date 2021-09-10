@@ -21,6 +21,7 @@
 .mobile-menu {
     transform: translateX(-100%);
     transition: .2s;
+    overflow: hidden;
     z-index: 3;
     position: fixed;
     width: 100vw;
@@ -28,9 +29,12 @@
     height: 100vh;
     top: 0px;
     left: 0px;
-    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__wrapper{
         ul{
+            padding-top: 100px;
             list-style: none;
             padding-left: 15px;
             li{
@@ -44,6 +48,10 @@
                 color: #1c1c1c;
             }
         }
+    }
+    .footer__social {
+        position: fixed;
+        bottom: 50px;
     }
 }
 

@@ -36,6 +36,19 @@
 				'container_class' => 'mobile-menu__wrapper',
 				'theme_location'  => 'menu-mobile'
 			] ); ?>
+			<div class="footer__social ">
+				<div class="footer__social-wrapper">
+					<div class="footer__social-title">Связаться с нами:</div>
+					<div class="footer__phone-block">
+						<a href="tel:89215150004​" class="footer__phone">8 921 515-00-04​</a>
+					</div>
+					<div class="footer__icons">
+						<a target="_blank" href="https://wa.me/89215150004" class="soc-icon"><img src="/wp-content/uploads/2021/08/whatsapp.svg" alt="" class="soc-icon__img"></a>
+						<a target="_blank" href="tel:89215150004" class="soc-icon"><img src="/wp-content/uploads/2021/08/phone.svg" alt="" class="soc-icon__img"></a>
+						<a target="_blank" href="https://www.instagram.com/ypen.ru/" class="soc-icon"><img src="/wp-content/uploads/2021/08/inst.svg" alt="" class="soc-icon__img"></a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="header__products">
 			<div class="header__nav">
@@ -43,7 +56,7 @@
 				<a href="#" class="header__link">Детская одежда</a>
 			</div>
 		</div>
-		<div class="header__logo"><img src="/wp-content/uploads/2021/08/logo.svg" alt="Логотип сайта" class="header__logo-img"></div>
+		<div class="header__logo"><a href="<?echo get_site_url(); ?>"><img src="/wp-content/uploads/2021/08/logo.svg" alt="Логотип сайта" class="header__logo-img"></a></div>
 		<div class="header__about">
 			<div class="header__nav">
 				<a href="#" class="header__link">О нас</a>
