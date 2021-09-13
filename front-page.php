@@ -42,7 +42,9 @@ get_header();
         <div class="block-title slider-block__block-title">Футболки на каждый день</div>
         <?do_shortcode( '[show-category-slider category="hudi"]');?>
     </section>
-
+    <section>
+   
+    </section>
     <div class="instagram">
         <section class="instagram__title">
             <div class="block-title">Следите за нами в Instagram</div>

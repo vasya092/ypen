@@ -19,18 +19,8 @@ function showCategorySlider($atts) {
             <?
                 foreach ($products as $value) {
                     ?>
-                    <div class="swiper-slide product-slider__item slider-item">
-                        <a href="<?echo get_the_permalink( $value->id );?>">
-                            <div class="slider-item__image">
-                                <? echo show_sale_badge($value); ?>
-                                <? echo get_the_post_thumbnail( $value->id, 'large'); ?>
-                            </div>
-                            <div class="slider-item__main-info">
-                                <div class="slider-item__title"><?echo $value->name;?></div>
-                                <div class="slider-item__price"><? echo $value->get_price_html(); ?></div>
-                            </div>
-                        </a>
-                    </div>
+                     <?
+                     echo do_shortcode('[products ids="'.$value->id.'" limit="1" columns="1" class="swiper-slide product-slider__item slider-item"]');?>
                     <?
                 }
                 ?>

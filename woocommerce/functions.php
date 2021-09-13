@@ -140,3 +140,23 @@ function variation_on_category(){
 
     }
 }
+
+//Вывод минимальной цены для товаров с вариацией
+//TODO: Доработать вывод скидки
+add_filter('woocommerce_variable_price_html', 'mycustom_variation_price', 10, 2);
+add_filter('woocommerce_variable_sale_price_html', 'mycustom_variation_price', 10, 2 );
+ 
+function mycustom_variation_price( $price, $product ) {
+	if ( ! is_admin() && ((is_shop() || is_product_category() || is_home() || is_page()))) {
+     $price = '';
+     $price .= woocommerce_price($product->get_price());
+    } 
+    return $price;
+}
+
+//remove action
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+function showTest() {
+    return "test";
+}
+add_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_add_to_cart', 5 );

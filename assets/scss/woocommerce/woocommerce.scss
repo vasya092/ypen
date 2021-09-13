@@ -1,0 +1,113 @@
+// Перевод товаров на Grid layout
+.woocommerce .products ul, .woocommerce ul.products {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.woocommerce .products ul::after, .woocommerce .products ul::before, .woocommerce ul.products::after, .woocommerce ul.products::before{
+    display: none;  
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.woocommerce ul.products li.product .onsale {
+    top: 20px;
+    left: 20px;
+    right: auto;
+}
+
+// Другие
+
+.variations .label {
+    display: none;
+}
+a.reset_variations {
+    display: none;
+}
+table.variations {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+tr.vi-wpvs-variation-style.vi-wpvs-variation-style- {
+    margin-bottom: 0px;
+}
+
+.product.type-product .woocommerce-variation-add-to-cart.variations_button, .product.type-product .add_to_cart_button {
+    display: none !important;
+}
+.product .single_variation_wrap{
+    display: none !important;
+}
+:not(.single-product) .product.type-product form.variations_form {
+    margin-top: -74px;
+    background: #Fff !important;
+    opacity: 0;
+    z-index: 22;
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+    transition: opacity .2s;
+}
+.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap.vi-wpvs-option-wrap-default{
+    box-shadow: none !important;
+}
+.vi-wpvs-variation-wrap.vi-wpvs-variation-wrap-vi_wpvs_button_design .vi-wpvs-option-wrap {
+    margin: 0px;
+    padding: 20px 15px !important;
+}
+.product:hover form.variations_form.cart.vi_wpvs_variation_form.vi_wpvs_variation_form_init{
+opacity: 0.9;
+}
+a.reset_variations{
+    display: none !important;
+}
+h2.woocommerce-loop-product__title {
+    font-size: 13px;
+    color: #1C1C1C;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+h2.woocommerce-loop-product__title {
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.slider-block .woocommerce .products ul, .slider-block .woocommerce ul.products {
+    display: block;
+}
+
+.woocommerce ul.products li.product .price ins, .woocommerce ul.products li.product .price del,.woocommerce ul.products li.product .price {
+    font-size: 13px;
+    font-weight: 400;
+    color: #1C1C1C;
+}
+.woocommerce ul.products li.product span.price{
+    width: 30%;
+}
+
+.woocommerce-page.columns-1 ul.products li.product, .woocommerce.columns-1 ul.products li.product {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.woocommerce ul.products li.product span.price {
+    width: 30%;
+    margin-bottom: 0px;
+    text-align: right;
+}
