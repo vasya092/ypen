@@ -7,4 +7,5 @@ jQuery(document).ready(function ($) {
         $('body').toggleClass('no-scroll');
     });
 
+    $('#pa_color').attr('disabled', true)
 });

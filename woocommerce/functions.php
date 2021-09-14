@@ -160,3 +160,7 @@ function showTest() {
     return "test";
 }
 add_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_add_to_cart', 5 );
+
+//перемещение выдержки над ценой
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 7);

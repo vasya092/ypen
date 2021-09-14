@@ -29,7 +29,8 @@ get_header();
                 <img src="/wp-content/uploads/2021/08/cloud2.svg" alt="" class="ypen-school__cloud-2">
                 <div class="ypen-school__title">Ручка-тренажер для учеников начальных классов</div>
                 <div class="ypen-school__desc normal-text">Помогаем детям правильно держать ручку, писать с комфортом и без болей</div>
-                <a href="#" class="button button_white">Купить</a>
+                <a href="#" class="button button_white onlymobile">Купить</a>
+                <a href="#" class="button button_white onlypc">О ручке YPEN</a>
             </div>    
         </div>
     </section>
@@ -53,24 +54,30 @@ get_header();
         <div class="instagram__photos">
             <a href="https://instagram.com/ypen.ru?utm_medium=copy_link" target="_blank"><img src="/wp-content/uploads/2021/08/inst1.jpg" alt="" class="instagram__img"></a>
             <a href="https://instagram.com/ypen.ru?utm_medium=copy_link" target="_blank"><img src="/wp-content/uploads/2021/08/inst2.jpg" alt="" class="instagram__img"></a>
-            <a href="https://instagram.com/ypen.ru?utm_medium=copy_link" target="_blank"><img src="/wp-content/uploads/2021/08/inst3.jpg" alt="" class="instagram__img"></a>
-            <a href="https://instagram.com/ypen.ru?utm_medium=copy_link" target="_blank"><img src="/wp-content/uploads/2021/08/inst4.jpg" alt="" class="instagram__img"></a>
+            <a href="https://instagram.com/ypen.ru?utm_medium=copy_link" target="_blank"><img src="/wp-content/uploads/2021/09/inst3-2-1.jpg" alt="" class="instagram__img"></a>
+            <a href="https://instagram.com/ypen.ru?utm_medium=copy_link" target="_blank"><img src="/wp-content/uploads/2021/09/inst-4-2.jpg" alt="" class="instagram__img"></a>
         </div>
     </div>
     <div class="main-bottom">
         <div class="main-bottom__item">
-            <div class="main-bottom__title">История ручки-птички</div>
-            <div class="main-bottom__desc">Всё началось с одной ручки и превратилось в нашу миссию.</div>
+            <div class="main-bottom__top">
+                <div class="main-bottom__title">История ручки-птички</div>
+                <div class="main-bottom__desc">Всё началось с одной ручки и превратилось в нашу миссию.</div>
+            </div>
             <a href="#" class="main-bottom__button button">Читать подробнее</a>
         </div>
         <div class="main-bottom__item">
-            <div class="main-bottom__title">Отзывы о нашей продукции</div>
-            <div class="main-bottom__desc">Впечатления и первый опыт от наших покупателей</div>
+            <div class="main-bottom__top">
+                <div class="main-bottom__title">Отзывы о нашей продукции</div>
+                <div class="main-bottom__desc">Впечатления и первый опыт от наших покупателей</div>
+            </div>
             <a href="#" class="main-bottom__button button">Читать подробнее</a>
         </div>
         <div class="main-bottom__item">
-            <div class="main-bottom__title">Инструкция YPEN</div>
-            <div class="main-bottom__desc">У вас в руках YPEN — ручка-тренажер, что дальше?</div>
+            <div class="main-bottom__top">
+                <div class="main-bottom__title">Инструкция YPEN</div>
+                <div class="main-bottom__desc">У вас в руках YPEN — ручка-тренажер, что дальше?</div>
+            </div>
             <a href="#" class="main-bottom__button button">Читать подробнее</a>
         </div>
     </div>
