@@ -19,5 +19,6 @@
 		 */
 		do_action( 'woocommerce_single_product_summary' );
 		?>
+        <img src="/wp-content/uploads/2021/09/wavesvg.svg" alt="" class="pen-summary__absolute-wave">
 	</div>
 </section>

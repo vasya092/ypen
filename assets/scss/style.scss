@@ -230,7 +230,9 @@ span.onsale,.woocommerce span.onsale {
     font-weight: 400;
     background: #2593FF;
 }
-
+img.pen-summary__absolute-wave {
+    display: none;
+}
 p.price {
     margin: 0;
 }
@@ -529,6 +531,22 @@ a.button.button_white:hover, .main-bottom__button:hover {
     display: none;
 }
 @media (max-width: 768px){
+    img.pen-summary__absolute-wave {
+        display: block;
+    }
+    img.pen-summary__absolute-wave {
+        display: block;
+        position: absolute;
+        bottom: -130px;
+        z-index: 1;
+        height: 100%;
+        width: 100vw;
+        left: 0px;
+        object-fit: cover;
+    }
+    .pen-summary img.pen-summary__absolute-cat{
+        z-index: 2;
+    }
     .woocommerce-product-details__short-description{
         display: none;
     }

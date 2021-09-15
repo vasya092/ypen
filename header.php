@@ -52,7 +52,7 @@
 		</div>
 		<div class="header__products">
 			<div class="header__nav">
-				<a href="#" class="header__link">Ручка-тренажёр</a>
+				<a href="/product/ruchka-trenazhyor/" class="header__link">Ручка-тренажёр</a>
 				<a href="#" class="header__link">Детская одежда</a>
 			</div>
 		</div>
