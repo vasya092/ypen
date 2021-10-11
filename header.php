@@ -53,7 +53,7 @@
 		<div class="header__products">
 			<div class="header__nav">
 				<a href="/product/ruchka-trenazhyor/" class="header__link">Ручка-тренажёр</a>
-				<a href="#" class="header__link">Детская одежда</a>
+				<a href="/product-category/clothes/" class="header__link">Детская одежда</a>
 			</div>
 		</div>
 		<div class="header__logo"><a href="<?echo get_site_url(); ?>"><img src="/wp-content/uploads/2021/08/logo.svg" alt="Логотип сайта" class="header__logo-img"></a></div>

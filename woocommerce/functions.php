@@ -28,6 +28,10 @@ require_once "custom_get_price_html.php";
 //Замена бейджа скидки
 require_once "custom_woocommerce_sale_flash.php";
 
+//Рекомендуемые товары
+require_once "recomend-products.php";
+
+
 add_filter('woocommerce_loop_add_to_cart_link', 'variation_on_category');
 
 function variation_on_category(){
@@ -164,3 +168,104 @@ add_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_add_t
 //перемещение выдержки над ценой
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 7);
+//убрать хлебные крошки
+remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+
+
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'tb_woo_custom_cart_button_text' );
+add_filter( 'woocommerce_product_add_to_cart_text', 'tb_woo_custom_cart_button_text' );   
+function tb_woo_custom_cart_button_text() {
+        return __( 'Добавить в корзину', 'woocommerce' );
+}
+
+add_action( 'woocommerce_single_product_summary', 'show_custom_properties', 35 );
+function show_custom_properties() {
+    ?>
+    <div class="custom-properties">
+    <?
+        global $product;
+        $shortDesc = $product->get_short_description();
+        if(!empty($shortDesc)): 
+            ?>
+            <div class="spoiler">
+                <a href="" class="spoiler__link">Информация о товаре</a>
+                <div class="spoiler__body">
+                    <?echo $shortDesc; ?>
+                </div>
+            </div>
+            <?
+        endif;
+        $product_structure = get_post_meta($product->id, 'product_structure', true);    
+        if(!empty($product_structure)): 
+            ?>
+            <div class="spoiler">
+                <a href="" class="spoiler__link">Состав</a>
+                <div class="spoiler__body">
+                    <?echo $product_structure; ?>
+                </div>
+            </div>
+            <?
+        endif;  
+        $product_material = get_post_meta($product->id, 'product_material', true);    
+        if(!empty($product_material)): 
+            ?>
+            <div class="spoiler">
+                <a href="" class="spoiler__link">О материале</a>
+                <div class="spoiler__body">
+                    <?echo $product_material; ?>
+                </div>
+            </div>
+            <?
+        endif;  
+        $product_care = get_post_meta($product->id, 'product_care', true);    
+        if(!empty($product_care)): 
+            ?>
+            <div class="spoiler">
+                <a href="" class="spoiler__link">Уход за изделием</a>
+                <div class="spoiler__body">
+                    <?echo $product_care; ?>
+                </div>
+            </div>
+            <?
+        endif;  
+        ?>
+        </div>
+        
+        <div class="contribution">
+            <img src="/wp-content/uploads/2021/10/bird.svg" alt="" class="contribution__icon">
+            <div class="contribution__text">
+                Покупая наш мерч, вы вносите вклад в развитие и производство ручек для детей с ограниченными возможностями здоровья.
+            </div>
+        </div>
+
+        <?
+}
+
+//скрыть субмета
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
+
+
+add_action( 'woocommerce_single_product_summary', 'showSizeTable', 15 );
+
+function showSizeTable() {
+    global $product;
+    if(!empty(get_post_meta($product->id, 'product_size-table', true))):
+    ?>
+        <div class="button-size-block"><a class="table-size-button">Таблица размеров</a></div>
+    <?
+    endif;
+}
+
+
+
+
+add_action( 'woocommerce_single_variation', 'showColorSelect');
+
+function showColorSelect() {
+    global $product;
+    $productColorSelect = get_post_meta($product->id, 'product_before-cart', true);
+    if(!empty($productColorSelect)) {
+        echo $productColorSelect;
+    }
+}

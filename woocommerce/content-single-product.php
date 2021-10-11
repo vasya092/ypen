@@ -16,7 +16,9 @@
  */
 
 defined( 'ABSPATH' ) || exit;
+?>
 
+<?
 global $product;
 
 /**

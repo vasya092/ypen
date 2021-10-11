@@ -30,3 +30,29 @@ function showCategorySlider($atts) {
 }
 
 add_shortcode( 'show-category-slider', 'showCategorySlider' );
+
+function showProductsSlider($atts) {
+    $atts = shortcode_atts( array(
+		'ids' => '',
+	), $atts );
+    $productIds = explode(" ", $atts['ids']);
+    ?>
+    <div class="swiper product-slider">
+        <img src="/wp-content/uploads/2021/08/arrow.svg" alt="" class="swiper-button-next swiper-arrow">
+        <img src="/wp-content/uploads/2021/08/arrow.svg" alt="" class="swiper-button-prev swiper-arrow">
+        <div class="swiper-wrapper">
+            <?
+                foreach ($productIds as $productId) {
+                    ?>
+                     <?
+                     echo do_shortcode('[products ids="'.$productId.'" limit="1" columns="1" class="swiper-slide product-slider__item slider-item"]');?>
+                    <?
+                }
+                ?>
+        </div>
+    </div>
+    <?
+}
+
+
+add_shortcode( 'show-products-slider', 'showProductsSlider' );

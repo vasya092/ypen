@@ -27,7 +27,7 @@ get_header();
             <div class="ypen-school__info">
                 <img src="/wp-content/uploads/2021/08/cloud-cut.svg" alt="" class="ypen-school__cloud-1">
                 <img src="/wp-content/uploads/2021/08/cloud2.svg" alt="" class="ypen-school__cloud-2">
-                <div class="ypen-school__title">Ручка-тренажер для учеников начальных классов</div>
+                <div class="ypen-school__title">Ручка-тренажер<br>для учеников<br>начальных классов</div>
                 <div class="ypen-school__desc normal-text">Помогаем детям правильно держать ручку, писать с комфортом и без болей</div>
                 <a href="#" class="button button_white onlymobile">Купить</a>
                 <a href="#" class="button button_white onlypc">О ручке YPEN</a>
