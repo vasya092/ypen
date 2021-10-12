@@ -39,7 +39,10 @@
 	</div>
 	
 	<div class="help-write__pen-image">
-		<img src="/wp-content/uploads/2021/09/component-5.png" alt="" class="help-write__pen-img">
+		<picture>
+			<source srcset="/wp-content/uploads/2021/10/24-1.png" media="(max-width: 768px)">
+			<img src="/wp-content/uploads/2021/09/component-5.png" alt="" class="help-write__pen-img">
+		</picture>
 		<img src="/wp-content/uploads/2021/10/vector.svg" alt="" class="help-write__left-svg">
 	</div>
 	<img src="/wp-content/uploads/2021/10/component-29.svg" alt="" class="help-write__left-bottom-img">
@@ -59,14 +62,18 @@
 		</div>
 		<div class="pen-work__image">
 			<img src="/wp-content/uploads/2021/09/how-arrow-1-1.svg" alt="" class="pen-work__image-first-arrow">
-			<img src="/wp-content/uploads/2021/09/blue-pen.png" alt="" class="pen-work__img">
+			<picture>
+				<source srcset="/wp-content/uploads/2021/10/2-6.png" media="(max-width: 768px)">
+				<img src="/wp-content/uploads/2021/09/blue-pen.png" alt="" class="pen-work__img">
+			</picture>
 			<img src="/wp-content/uploads/2021/09/how-arrow-2.svg" alt="" class="pen-work__image-second-arrow">
 		</div>
 		<div class="middle-text first-element">
-			“Брюшко” ручки-птички упирается в ладонь, позволяя почувствовать упор и перераспределить нагрузку с пальцев.	
+			“Брюшко” ручки-птички упирается в ладонь, позволяя почувствовать упор и <span class="blue-text">перераспределить нагрузку с пальцев.</span>	
 		</div>
 	</div>
 	<img src="/wp-content/uploads/2021/09/component-9.svg" alt="" class="pen-work__image-left-face">
+	<img src="/wp-content/uploads/2021/10/sgroup.svg" alt="" class="pen-work__mobile-top-face">
 </section>
 <section class="pen-use">
 	<img src="/wp-content/uploads/2021/09/group-144.svg" alt="" class="pen-use__top-image">
@@ -104,7 +111,7 @@
 			Подходит как для левшей, так и для правшей
 		</div>
 		<div class="middle-text">
-		Статистика подтверждает, что ручки YPEN одинакого удобны для правшей и левшей.
+		Статистика подтверждает, что ручки YPEN одинаково удобны для правшей и левшей.
 		</div>
 	</div>
 </section>
@@ -171,7 +178,10 @@
 	</div>
 </section>
 <section class="kernel-change">
-	<img src="/wp-content/uploads/2021/09/component-14.svg" alt="" class="kernel-change__right-top">
+	<picture>
+		<source srcset="/wp-content/uploads/2021/10/component-29-1.svg" media="(max-width: 520px)">
+		<img src="/wp-content/uploads/2021/09/component-14.svg" alt="" class="kernel-change__right-top">
+	</picture>
 	<img src="/wp-content/uploads/2021/09/component-15-1.svg" alt="" class="kernel-change__left-bottom">
 	<div class="default-container low-container">
 		<div class="kernel-change__info">
@@ -180,7 +190,7 @@
 					Легкая замена стержня
 				</div>
 				<div class="middle-text">
-					В YPEN используются стандартные 107-миллиметровые стержни с «ушками». Он легко вынимается и заменяется. Стержень можно приобрести в любом отделе канцтоваров.
+					В YPEN используются стандартные 107&#8209;миллиметровые стержни с «ушками». Он легко вынимается и заменяется. Стержень можно приобрести в любом отделе канцтоваров.
 				</div>
 			</div>
 			<div class="kernel-change__bottom-info">
@@ -201,6 +211,10 @@
 		<div class="pen-feedback__grid">
 			<div class="pen-feedback__item">
 					<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
+					<div class="pen-feedback__popup" style="display: none;">
+						<div class="popup__overlay" style="display: block;"></div>
+						<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
+					</div>
 				</div>
 				<div class="pen-feedback__item">
 					<img src="/wp-content/uploads/2021/09/14-3.png" alt="" class="pen-feedback__img">
@@ -247,7 +261,7 @@
 				Забота о здоровом зрении и правильной осанке
 			</div>
 			<div class="middle-text">
-				Неудобное положение руки вынуждает ребенка наклоняться вперед, из-за этого глазные мышцы напрягаются, а спина изгибается. Когда ребенок пишет ручкой YPEN, его рука расслаблена и движется свободно. Когда ребенок запоминает, как держать ручку правильно и без дискомфорта, его посадка становится естественной.<br><br>Углубления и форма ручки YPEN продумана таким образом, чтобы ему не приходилось наклонять голову и корпус тела, что позволяет сохранить осанку и зрение.
+				Неудобное положение руки вынуждает ребенка наклоняться вперед, из-за этого глазные мышцы напрягаются, а спина изгибается. Когда ребенок пишет ручкой YPEN, его рука расслаблена и движется свободно. Когда ребенок запоминает, как держать ручку правильно и без дискомфорта, его посадка становится естественной.<br><br>Углубления и форма ручки YPEN продумана таким образом, чтобы ему <span class="blue-text">не&nbsp;приходилось наклонять голову и корпус тела, что позволяет сохранить осанку и зрение.</span>
 			</div>
 		</div>
 	</div>
@@ -271,5 +285,6 @@
 		<div class="middle-title">Пусть ребенок пишет правильно<br>и c удовольствием!</div>
 		<a href="#" class="button button_white bottom-pen__button">Заказать</a>
 		<img src="/wp-content/uploads/2021/09/component-24-1.png" alt="" class="bottom-pen__image-absolute">
+		<img src="/wp-content/uploads/2021/10/group.svg" alt="" class="bottom-pen__image-lines">
 	</div>
 </section>
