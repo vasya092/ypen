@@ -212,18 +212,34 @@
 			<div class="pen-feedback__item">
 					<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
 					<div class="pen-feedback__popup" style="display: none;">
-						<div class="popup__overlay" style="display: block;"></div>
+						<div class="pen-feedback-popup__overlay" style="display: block;"></div>
+						<img src="/wp-content/uploads/2021/10/burger.svg" alt="" class="pen-feedback__close">
 						<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
 					</div>
 				</div>
 				<div class="pen-feedback__item">
 					<img src="/wp-content/uploads/2021/09/14-3.png" alt="" class="pen-feedback__img">
+					<div class="pen-feedback__popup" style="display: none;">
+						<div class="pen-feedback-popup__overlay" style="display: block;"></div>
+						<img src="/wp-content/uploads/2021/10/burger.svg" alt="" class="pen-feedback__close">
+						<img src="/wp-content/uploads/2021/09/14-3.png" alt="" class="pen-feedback__img">
+					</div>
 				</div>
 				<div class="pen-feedback__item">
 					<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
+					<div class="pen-feedback__popup" style="display: none;">
+						<div class="pen-feedback-popup__overlay" style="display: block;"></div>
+						<img src="/wp-content/uploads/2021/10/burger.svg" alt="" class="pen-feedback__close">
+						<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
+					</div>
 				</div>
 				<div class="pen-feedback__item">
 					<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
+					<div class="pen-feedback__popup" style="display: none;">
+						<div class="pen-feedback-popup__overlay" style="display: block;"></div>
+						<img src="/wp-content/uploads/2021/10/burger.svg" alt="" class="pen-feedback__close">
+						<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
+					</div>
 				</div>
 				<div class="pen-feedback__item">
 					<img src="/wp-content/uploads/2021/09/14-3.png" alt="" class="pen-feedback__img">
@@ -258,7 +274,7 @@
 	<div class="default-container">
 		<div class="care-vision__info">
 			<div class="middle-title">
-				Забота о здоровом зрении и правильной осанке
+				Забота о здоровом зрении и&nbsp;правильной осанке
 			</div>
 			<div class="middle-text">
 				Неудобное положение руки вынуждает ребенка наклоняться вперед, из-за этого глазные мышцы напрягаются, а спина изгибается. Когда ребенок пишет ручкой YPEN, его рука расслаблена и движется свободно. Когда ребенок запоминает, как держать ручку правильно и без дискомфорта, его посадка становится естественной.<br><br>Углубления и форма ручки YPEN продумана таким образом, чтобы ему <span class="blue-text">не&nbsp;приходилось наклонять голову и корпус тела, что позволяет сохранить осанку и зрение.</span>
@@ -277,7 +293,10 @@
 			<img src="/wp-content/uploads/2021/09/2-mesto_pajkachev-ip-1.jpg" alt="" class="pen-awards__diplom">
 		</div>
 	</div>
+	<picture>
+		<source srcset="/wp-content/uploads/2021/10/group-152.svg" media="(max-width: 768px)">
 	<img src="/wp-content/uploads/2021/09/group-142.svg" alt="" class="pen-awards__bottom-image">
+	</picture>
 </section>
 <section class="bottom-pen">
 	<img src="/wp-content/uploads/2021/09/yellow-icon.svg" alt="" class="bottom-pen__absolute-top">

@@ -31,8 +31,13 @@ jQuery(document).ready(function ($) {
     $('li.product   .vi-wpvs-option-wrap').click((e)=> {
         document.location.href = $(e.target).parents('a').attr('href')
     })
-    $(document).click(e=>{
-        console.log(e.target);
+
+    $('.pen-feedback__item').click(function (e) { 
+        e.preventDefault();
+        $(e.target).next().fadeIn('fast');
+    });
+    $('.pen-feedback-popup__overlay, .pen-feedback__close').click(()=>{
+        $('.pen-feedback__popup').hide();
     })
 
 });
