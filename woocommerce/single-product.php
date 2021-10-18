@@ -66,6 +66,46 @@ get_header( 'shop' ); ?>
 			<?echo get_post_meta($product->id, 'product_size-table', true);?>
 			</div>
 		</section>
+<div class="modal-wrapper related-popup">
+<div class="related-popup__overlay"></div>
+
+<section class="related-popup__wrap">
+	<div class="related-popup__block">
+		<div class="related-popup__title">Товар успешно добавлен в корзину</div>
+		<div class="related-popup__info discount-info">
+				<div class="discount-info__loader"></div>
+				<div class="discount-info__desc">
+					<div class="discount-info__title">Добавьте товар в заказ и получите <span class="bold-text">дополнительную скидку до 15%</span></div>
+					<div class="discount-info__progress">
+						<div class="progress-bar__curent">0</div>
+						<div class="progress-bar">
+							<div class="progress-bar__item first">
+							<div class="progress-bar__progress" style="width: 0%"></div></div>
+							<div class="progress-bar__item second">
+							<div class="progress-bar__progress" style="width: 0%"></div></div>
+							<div class="progress-bar__item third">
+							<div class="progress-bar__progress" style="width: 0%"></div></div>
+						</div>
+						<div class="progress-bar__numbers">
+							<div class="progress-bar__number">0%<br>0 ₽</div>
+							<div class="progress-bar__number">5%<br>1800 ₽</div>
+							<div class="progress-bar__number">10%<br>4000 ₽</div>
+							<div class="progress-bar__number">15%<br>7000 ₽</div>
+						</div>
+						<div class="progress-bar__checks">
+							<ul class="progress-bar__list">
+								<li class="progress-bar__check-item">Cкидка 5% при покупке от 1 800 ₽</li>
+								<li class="progress-bar__check-item">Cкидка 10% при покупке от 4 000 ₽</li>
+								<li class="progress-bar__check-item">Cкидка 15% при покупке от 7 000 ₽</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<?do_shortcode( '[show-category-slider category="hudi"]');?>
+		</div>
+	</div>
+</section>	
+</div>
 		<?	
 		?>
 
@@ -77,7 +117,6 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_sidebar' );
 	?>
-	
 <?php
 get_footer( 'shop' );
 

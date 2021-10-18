@@ -40,4 +40,12 @@ jQuery(document).ready(function ($) {
         $('.pen-feedback__popup').hide();
     })
 
+    $('.related-popup__overlay').click(function (e) { 
+        e.preventDefault();
+        $('.related-popup__wrap').removeClass('active');
+        setTimeout(() => {
+            $('.related-popup').hide();
+        }, 200);
+    });
+
 });

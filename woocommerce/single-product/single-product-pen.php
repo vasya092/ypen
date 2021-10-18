@@ -40,7 +40,7 @@
 	
 	<div class="help-write__pen-image">
 		<picture>
-			<source srcset="/wp-content/uploads/2021/10/24-1.png" media="(max-width: 768px)">
+			<source srcset="/wp-content/uploads/2021/10/24-1-1.png" media="(max-width: 768px)">
 			<img src="/wp-content/uploads/2021/09/component-5.png" alt="" class="help-write__pen-img">
 		</picture>
 		<img src="/wp-content/uploads/2021/10/vector.svg" alt="" class="help-write__left-svg">
@@ -55,18 +55,25 @@
 	
 	<div class="default-container">
 		<div class="middle-title">
-			Как работает ручка-тренажёр
+			Как работает ручка&#8209;тренажёр
 		</div>
 		<div class="middle-text first-element">
 			Углубления для пальцев и “глазки” помогают ребенку лучше понять и запомнить, как правильно держать ручку.	
 		</div>
 		<div class="pen-work__image">
+			
+			<picture>
+				<source srcset="/wp-content/uploads/2021/10/group-154.svg" media="(max-width: 768px)">
 			<img src="/wp-content/uploads/2021/09/how-arrow-1-1.svg" alt="" class="pen-work__image-first-arrow">
+			</picture>
 			<picture>
 				<source srcset="/wp-content/uploads/2021/10/2-6.png" media="(max-width: 768px)">
 				<img src="/wp-content/uploads/2021/09/blue-pen.png" alt="" class="pen-work__img">
 			</picture>
-			<img src="/wp-content/uploads/2021/09/how-arrow-2.svg" alt="" class="pen-work__image-second-arrow">
+			<picture>
+				<source srcset="/wp-content/uploads/2021/10/component-31.svg" media="(max-width: 768px)">
+				<img src="/wp-content/uploads/2021/09/how-arrow-2.svg" alt="" class="pen-work__image-second-arrow">
+			</picture>
 		</div>
 		<div class="middle-text first-element">
 			“Брюшко” ручки-птички упирается в ладонь, позволяя почувствовать упор и <span class="blue-text">перераспределить нагрузку с пальцев.</span>	
@@ -116,10 +123,13 @@
 	</div>
 </section>
 <section class="pen-writing">
+	<img src="/wp-content/uploads/2021/10/back-vector.svg" alt="" class="pen-writing__mobile-bacground">
 	<picture>
 		<source srcset="/wp-content/uploads/2021/09/new-vector.svg" media="(max-width: 2170px)">
 		<img src="/wp-content/uploads/2021/09/vectosr.svg" alt="" class="pen-writing__background">
 	</picture>
+	
+	<img src="/wp-content/uploads/2021/10/component-30.svg" alt="" class="before-after__pc-image">
 	<div class="default-container low-container">
 		<div class="middle-title">
 			Способствует формированию<br>разборчивого почерка
@@ -128,20 +138,19 @@
 			Благодаря специально разработанной для детских рук формы, нескользящего материала и упирающегося в ладонь “брюшка”, ручка помогает ребенку быстрее освоить правильную технику письма.
 		</div>
 		<div class="swiper before-after__slider">
-			<!-- Additional required wrapper -->
 			<div class="swiper-wrapper">
 				<!-- Slides -->
 				<div class="swiper-slide">
 					<div class="before-after__item">
 						<div class="before-after__before">
-							<img src="/wp-content/uploads/2021/09/pocherk-1.jpg" alt="" class="before-after__image">
+							<img src="/wp-content/uploads/2021/10/66mask-group.jpg" alt="" class="before-after__image">
 							<div class="before-after__title">
 								<div class="before-after__title-before">Было</div>
 							</div>
 						</div>
 						
 						<div class="before-after__after">
-							<img src="/wp-content/uploads/2021/09/pocherk-2.jpg" alt="" class="before-after__image">
+							<img src="/wp-content/uploads/2021/10/999mask-group-e1634289623332.jpg" alt="" class="before-after__image">
 							<div class="before-after__title">
 								<div class="before-after__title-after">Стало</div>
 							</div>
@@ -151,20 +160,70 @@
 				<div class="swiper-slide">
 					<div class="before-after__item">
 						<div class="before-after__before">
-							<img src="/wp-content/uploads/2021/09/pocherk-1.jpg" alt="" class="before-after__image">
+							<img src="/wp-content/uploads/2021/10/2-1-1.jpg" alt="" class="before-after__image">
 							<div class="before-after__title">
 								<div class="before-after__title-before">Было</div>
 							</div>
 						</div>
 						<div class="before-after__after">
-							<img src="/wp-content/uploads/2021/09/pocherk-2.jpg" alt="" class="before-after__image">
+							<img src="/wp-content/uploads/2021/10/2.1-1-1.jpg" alt="" class="before-after__image">
 							<div class="before-after__title">
 								<div class="before-after__title-after">Стало</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				...
+				
+				<div class="swiper-slide">
+					<div class="before-after__item">
+						<div class="before-after__before">
+							<img src="/wp-content/uploads/2021/10/3-2-1.jpg" alt="" class="before-after__image">
+							<div class="before-after__title">
+								<div class="before-after__title-before">Было</div>
+							</div>
+						</div>
+						<div class="before-after__after">
+							<img src="/wp-content/uploads/2021/10/3.1-2.jpg" alt="" class="before-after__image">
+							<div class="before-after__title">
+								<div class="before-after__title-after">Стало</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide">
+					<div class="before-after__item">
+						<div class="before-after__before">
+							<img src="/wp-content/uploads/2021/10/4-1-1.jpg" alt="" class="before-after__image">
+							<div class="before-after__title">
+								<div class="before-after__title-before">Было</div>
+							</div>
+						</div>
+						<div class="before-after__after">
+							<img src="/wp-content/uploads/2021/10/4.1-1.jpg" alt="" class="before-after__image">
+							<div class="before-after__title">
+								<div class="before-after__title-after">Стало</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide">
+					<div class="before-after__item">
+						<div class="before-after__before">
+							<img src="/wp-content/uploads/2021/10/5-1.jpg" alt="" class="before-after__image">
+							<div class="before-after__title">
+								<div class="before-after__title-before">Было</div>
+							</div>
+						</div>
+						<div class="before-after__after">
+							<img src="/wp-content/uploads/2021/10/5.1-1.jpg" alt="" class="before-after__image">
+							<div class="before-after__title">
+								<div class="before-after__title-after">Стало</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!-- If we need pagination -->
 
@@ -226,35 +285,35 @@
 					</div>
 				</div>
 				<div class="pen-feedback__item">
-					<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
+					<img src="/wp-content/uploads/2021/10/6-1-1-1.png" alt="" class="pen-feedback__img">
 					<div class="pen-feedback__popup" style="display: none;">
 						<div class="pen-feedback-popup__overlay" style="display: block;"></div>
 						<img src="/wp-content/uploads/2021/10/burger.svg" alt="" class="pen-feedback__close">
-						<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
+						<img src="/wp-content/uploads/2021/10/6-1-1-1.png" alt="" class="pen-feedback__img">
 					</div>
 				</div>
 				<div class="pen-feedback__item">
-					<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
+					<img src="/wp-content/uploads/2021/10/8-922.png" alt="" class="pen-feedback__img">
 					<div class="pen-feedback__popup" style="display: none;">
 						<div class="pen-feedback-popup__overlay" style="display: block;"></div>
 						<img src="/wp-content/uploads/2021/10/burger.svg" alt="" class="pen-feedback__close">
-						<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
+						<img src="/wp-content/uploads/2021/10/8-922.png" alt="" class="pen-feedback__img">
 					</div>
 				</div>
 				<div class="pen-feedback__item">
-					<img src="/wp-content/uploads/2021/09/14-3.png" alt="" class="pen-feedback__img">
+					<img src="/wp-content/uploads/2021/10/3-1-1.png" alt="" class="pen-feedback__img">
 				</div>
 				<div class="pen-feedback__item">
-					<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
+					<img src="/wp-content/uploads/2021/10/12-3.png" alt="" class="pen-feedback__img">
 				</div>
 				<div class="pen-feedback__item">
-					<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
+					<img src="/wp-content/uploads/2021/10/13-5.png" alt="" class="pen-feedback__img">
 				</div>
 				<div class="pen-feedback__item">
-					<img src="/wp-content/uploads/2021/09/14-3.png" alt="" class="pen-feedback__img">
+					<img src="/wp-content/uploads/2021/10/10-1-1.png" alt="" class="pen-feedback__img">
 				</div>
 				<div class="pen-feedback__item">
-					<img src="/wp-content/uploads/2021/09/10-2.png" alt="" class="pen-feedback__img">
+					<img src="/wp-content/uploads/2021/10/4-801.png" alt="" class="pen-feedback__img">
 				</div>
 				
 				<div class="pen-feedback__overlay"></div>
