@@ -101,8 +101,12 @@ get_header( 'shop' ); ?>
 						</div>
 					</div>
 				</div>
-				<?do_shortcode( '[show-category-slider category="hudi"]');?>
+				<?do_shortcode( '[show-popup-slider ids="224 220 213 53 43"]');?>
 		</div>
+	</div>
+	<div class="related-popup__buttons">
+		<a href="#" class="next-buy related-popup__button">Продолжить покупки</a>
+		<a href="/cart/" class="go-cart related-popup__button blue">Перейти в корзину</a>
 	</div>
 </section>	
 </div>

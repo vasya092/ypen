@@ -47,6 +47,18 @@ const swiper = new Swiper('.before-after__slider', {
     },
 });
 
+const popupSlider = new Swiper('.popup-slider', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 5,
+    spaceBetween: 20,
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
 
 const gallerySlider = new Swiper('.product-gallery-slider', {
     // Optional parameters

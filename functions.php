@@ -202,6 +202,7 @@ function custom_jquery_add_to_cart_script(){
 											$('.progress-bar .progress-bar__item:nth-child('+(step)+') .progress-bar__progress').css("width", "100%");
 											$('.progress-bar .progress-bar__item:nth-child('+(step)+') .progress-bar__progress').addClass("full");
 											$('.progress-bar__list .progress-bar__check-item:nth-child('+(step)+')').addClass("active");
+											$('.progress-bar__numbers .progress-bar__number:nth-child('+(step+1)+')').addClass("active");
 										}
 										else {
 											currentPercent = response/steps[step];
@@ -211,16 +212,19 @@ function custom_jquery_add_to_cart_script(){
 											$('.progress-bar .progress-bar__item:nth-child(1) .progress-bar__progress').css("width", "100%");
 											$('.progress-bar .progress-bar__item:nth-child(1) .progress-bar__progress').addClass("full");
 											$('.progress-bar__list .progress-bar__check-item:nth-child(1)').addClass("active");
+											$('.progress-bar__numbers .progress-bar__number:nth-child(2)').addClass("active");
 										}
 										if(currentPercent >= 1) {
 											currentPercent  = 100;
 											$('.progress-bar .progress-bar__item:nth-child('+(step+1)+') .progress-bar__progress').css("width", currentPercent+"%");
 											$('.progress-bar .progress-bar__item:nth-child('+(step+1)+') .progress-bar__progress').css("width", currentPercent+"%");
 											$('.progress-bar__list .progress-bar__check-item:nth-child('+(step+1)+')').addClass("active");
+											$('.progress-bar__numbers .progress-bar__number:nth-child('+(step+2)+')').addClass("active");
 										}
 										else {
 											currentPercent = currentPercent * 100;
 											$('.progress-bar .progress-bar__item:nth-child('+(step+1)+') .progress-bar__progress').css("width", currentPercent+"%");
+											$('.progress-bar__numbers .progress-bar__number').addClass("active");
 										}
 										console.log('response: ', response, ' steps[step]: ',steps[step], ' is cp:', currentPercent, 'step: ', step);
 										console.log('.progress-bar__list .progress-bar__check-item:nth-child('+(step+1)+')');

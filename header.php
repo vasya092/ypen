@@ -64,7 +64,7 @@
 			</div>
 		</div>
 		<div class="header__cart">
-			<img src="/wp-content/uploads/2021/08/cart.svg" alt="" class="header__cart-img">
+			<a href="/cart/"><img src="/wp-content/uploads/2021/10/cart.svg" alt="" class="header__cart-img"></a>
 		</div>
 	</div>
 	</header><!-- .site-header -->

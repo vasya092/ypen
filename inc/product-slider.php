@@ -57,3 +57,39 @@ function showProductsSlider($atts) {
 
 
 add_shortcode( 'show-products-slider', 'showProductsSlider' );
+
+function showPopupSlider($atts) {
+    global $product;
+    $exclude_ids = array($product->id);
+    $args = array(
+        'post_type'              => array( 'product' ),
+        'exclude'           => $exclude_ids,
+        'orderby'     => 'rand',
+      );
+      
+    
+    $query = get_posts( $args );
+    $atts = shortcode_atts( array(
+		'ids' => '',
+	), $atts );
+    $productIds = explode(" ", $atts['ids']);
+    ?>
+    <div class="swiper popup-slider">
+        <img src="/wp-content/uploads/2021/08/arrow.svg" alt="" class="swiper-button-next swiper-arrow">
+        <img src="/wp-content/uploads/2021/08/arrow.svg" alt="" class="swiper-button-prev swiper-arrow">
+        <div class="swiper-wrapper">
+            <?
+                foreach ($query as $item) {
+                    ?>
+                     <?
+                     echo do_shortcode('[products ids="'.$item->ID.'" limit="1" columns="1" class="swiper-slide product-slider__item slider-item"]');?>
+                    <?
+                }
+                ?>
+        </div>
+    </div>
+    <?
+}
+
+
+add_shortcode( 'show-popup-slider', 'showPopupSlider' );

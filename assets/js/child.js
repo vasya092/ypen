@@ -40,7 +40,7 @@ jQuery(document).ready(function ($) {
         $('.pen-feedback__popup').hide();
     })
 
-    $('.related-popup__overlay').click(function (e) { 
+    $('.related-popup__overlay, .next-buy').click(function (e) { 
         e.preventDefault();
         $('.related-popup__wrap').removeClass('active');
         setTimeout(() => {

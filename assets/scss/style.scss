@@ -1073,6 +1073,23 @@ img.help-write__left-svg {
     to {background-color: #ebeaea;}
     }
 .related-popup {
+    &__button{
+        padding: 16px 55px;
+        color: #2C2C2C;
+        font-size: 24px;
+        line-height: 35px;
+        border-radius: 5px;
+        font-weight: 400;
+        text-decoration: none;
+        &.blue{
+            background-color: #0091DC;
+            color: #fff;
+        }
+    }
+    &__buttons{
+        text-align: center;
+        margin: 47px 0px;
+    }
     &__wrap {
         position: absolute;
         background: #fff;
@@ -1226,6 +1243,24 @@ img.kernel-change__img {
         cursor:pointer;
     }
 }
+tr.vi-wpvs-variation-style.vi-wpvs-variation-style-horizontal {
+    display: none !important;
+}
+.postid-97 tr.vi-wpvs-variation-style.vi-wpvs-variation-style-horizontal {
+    display: block !important;
+}
+.custom-cart {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-column-gap: 40px;
+    .woocommerce-notices-wrapper {
+        display: none;
+    }
+}
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+    float: right;
+    width: 100%;
+}
 .custom-properties .spoiler {
     border-top: 1px solid rgba(132, 132, 132, 0.2);
 }
@@ -1268,6 +1303,12 @@ img.bottom-pen__image-lines {
     }
 }
 @media (max-width: 1720px){
+    .related-popup {
+        &__button{
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
     .care-vision__top-image {
         width: 19em;
         top: 69px;
@@ -1864,6 +1905,22 @@ img.help-write__pain-cloud {
 .left-pen{
     display: none;
 }
+.popup-slider{
+    width: 100%;
+    form.variations_form {
+        display: none;
+    }
+    ul.products.columns-1 {
+        display: block;
+    }
+    .woocommerce-loop-product__title{
+        width: 100%;
+    }
+    .woocommerce ul.products li.product span.price {
+        text-align: revert;
+        width: 100%;
+    }
+}
 section.left-pen {
     margin-bottom: 60px;
     background-image: url(/wp-content/uploads/2021/09/component-25.jpg);
@@ -1903,6 +1960,38 @@ img.pen-writing__mobile-bacground {
     display: none;
 }
 @media (max-width: 768px){
+    .popup-slider {
+        display: none;
+    }
+    .discount-info{
+        grid-template-columns: 1fr;
+    }
+    .related-popup__title{
+        font-size: 16px;
+        color: #A0A0A0;
+    }
+    .discount-info__title {
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .progress-bar__checks {
+        display: none;
+    }
+    .related-popup__button {
+        display: block;
+        width: 50%;
+        font-size: 16px;
+    }
+    .related-popup__button {
+        padding: 16px 0px;
+    }
+    .next-buy{
+        order: 2;
+    }
+    .related-popup__buttons{
+        display: flex;
+    }
     .pen-feedback__read-more {
         position: relative;
         margin-top: -85px;

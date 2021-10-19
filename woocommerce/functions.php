@@ -269,3 +269,5 @@ function showColorSelect() {
         echo $productColorSelect;
     }
 }
+
+add_filter( 'woocommerce_product_variation_title_include_attributes', '__return_false' );
