@@ -1,3 +1,5 @@
 10/06/21 1:04:00: style.scss - parse error: failed at `.table-size-button` /var/www/u1060948/data/www/ypen.artfrom.ru/wp-content/themes/cleartheme/assets/scss/woocommerce/woocommerce.scss on line 506, at column 34
 10/06/21 1:04:06: style.scss - parse error: failed at `.table-size-button` /var/www/u1060948/data/www/ypen.artfrom.ru/wp-content/themes/cleartheme/assets/scss/woocommerce/woocommerce.scss on line 506, at column 34
 10/06/21 1:48:42: style.scss - parse error: failed at `border: 1px solid #E5E5E5` /var/www/u1060948/data/www/ypen.artfrom.ru/wp-content/themes/cleartheme/assets/scss/style.scss on line 691, at column 38
+10/20/21 10:46:04: style.scss - parse error: failed at `grid-column -gap: 48px;` /var/www/u1060948/data/www/ypen.artfrom.ru/wp-content/themes/cleartheme/assets/scss/style.scss on line 1091, at column 9
+10/20/21 10:46:09: style.scss - parse error: failed at `grid-column -gap: 48px;` /var/www/u1060948/data/www/ypen.artfrom.ru/wp-content/themes/cleartheme/assets/scss/style.scss on line 1092, at column 9

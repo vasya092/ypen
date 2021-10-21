@@ -24,6 +24,13 @@ defined( 'ABSPATH' ) || exit;
 
 	<h2><?php esc_html_e( 'Ваш заказ', 'woocommerce' ); ?></h2>
 
+	<div class="progress-bar__checks">
+							<ul class="progress-bar__list">
+								<li class="progress-bar__check-item">Cкидка 5% при покупке от 1 800 ₽</li>
+								<li class="progress-bar__check-item">Cкидка 10% при покупке от 4 000 ₽</li>
+								<li class="progress-bar__check-item">Cкидка 15% при покупке от 7 000 ₽</li>
+							</ul>
+		</div>
 	<table cellspacing="0" class="shop_table shop_table_responsive">
 
 		<tr class="cart-subtotal">
