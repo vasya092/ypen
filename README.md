@@ -1,2 +1,2 @@
-# Cleartheme
-Чистая базовая тема на Wordpress, для работы с SCSS
+# Ypen
+Исходный код темы https://ypen.ru/
